@@ -4,9 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby starter ecommerce',
+    title: 'Brainstem Brewing',
     author: 'Parminder Sanghera',
-    description: 'A starter e-commerce site made using Gatsby.',
+    description: 'Brainstem Brewing beers and tap',
     siteUrl: 'https://parmsang.github.io/gatsby-starter-ecommerce/',
   },
   pathPrefix: '/gatsby-starter-ecommerce',
