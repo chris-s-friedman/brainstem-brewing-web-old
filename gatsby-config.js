@@ -71,5 +71,29 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-source-apiserver",
+      options: {
+        typePrefix: "beers__",
+        url: `https://api.brewersfriend.com/v1/recipes`,
+        method: "get",
+        headers: {
+          "X-API-KEY": process.env.brewersfriend_api_key
+        },
+      name: `recipes`,
+      }
+    },
+    {
+      resolve: "gatsby-source-apiserver",
+      options: {
+        typePrefix: "beers__",
+        url: `https://api.brewersfriend.com/v1/recipes`,
+        method: "get",
+        headers: {
+          "X-API-KEY": process.env.brewersfriend_api_key
+        },
+      name: `recipes`,
+      }
+    }
   ],
 }
